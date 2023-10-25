@@ -1,0 +1,1 @@
+wget https://github.com/skoltech-nlp/detox/releases/download/emnlp2021/filtered_paranmt.zip
