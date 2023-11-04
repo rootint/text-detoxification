@@ -28,3 +28,4 @@ Temporary Items
 # Homework stuff
 data/raw/filtered.tsv
 data/interim/training_data.csv
+src/data/training_data.csv
