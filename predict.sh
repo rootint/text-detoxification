@@ -1,0 +1,1 @@
+python src/models/predict_model.py "$1"

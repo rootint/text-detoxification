@@ -4,7 +4,7 @@
 url="https://github.com/skoltech-nlp/detox/releases/download/emnlp2021/filtered_paranmt.zip"
 
 # The output folder
-output_folder="."
+output_folder="data/raw"
 
 # Use wget to download the file
 wget "$url" -P "$output_folder"

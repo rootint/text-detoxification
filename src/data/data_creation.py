@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def preprocess(path="../../data/raw/filtered.tsv"):
+def preprocess(path="data/raw/filtered.tsv"):
     df = pd.read_csv(path, sep="\t")
 
     # Cleaning data
@@ -69,13 +69,13 @@ def preprocess(path="../../data/raw/filtered.tsv"):
 
     # Saving and removing NaNs
     print("Saving and removing NaNs...")
-    training_data.to_csv("training_data.csv", index=False)
+    training_data.to_csv("src/data/training_data.csv", index=False)
     dff = pd.read_csv(
-        "training_data.csv",
+        "src/data/training_data.csv",
         dtype={"toxic_column": str, "nontoxic_column": str},
     )
     dff.dropna(inplace=True)
-    dff.to_csv("training_data.csv", index=False)
+    dff.to_csv("src/data/training_data.csv", index=False)
     print("Done!")
 
 
