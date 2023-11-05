@@ -15,13 +15,10 @@ def main():
     model_checkpoint = "t5-small"
     prefix = "Make this text less toxic:"
     # Check if an argument is provided
-    if len(sys.argv) > 1:
-        argument = sys.argv[1]
-    else:
-        print('No text was provided!')
+    if len(sys.argv) <= 1:
+        print("No text was provided!")
         raise ValueError("No text was provided to detoxify")
 
-    # we will use autotokenizer for this purpose
     tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
     model = AutoModelForSeq2SeqLM.from_pretrained("models/t5-best-model")
     model.eval()

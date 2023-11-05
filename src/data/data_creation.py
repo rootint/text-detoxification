@@ -45,7 +45,7 @@ def preprocess(path="data/raw/filtered.tsv"):
 
     # Keeping rows with high toxicity threshold
     print("Keeping rows with high toxicity threshold...")
-    high_toxicity_threshold = 0.6
+    high_toxicity_threshold = 0.7
     filtered_data_diff = filtered_data_swapped.copy()
     filtered_data_diff["tox_diff"] = (
         filtered_data_diff["ref_tox"] - filtered_data_diff["trn_tox"]
