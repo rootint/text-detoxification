@@ -18,6 +18,7 @@ def main():
     if len(sys.argv) > 1:
         argument = sys.argv[1]
     else:
+        print('No text was provided!')
         raise ValueError("No text was provided to detoxify")
 
     # we will use autotokenizer for this purpose
@@ -28,3 +29,7 @@ def main():
 
     inference_request = prefix + sys.argv[1]
     detoxify(model, inference_request, tokenizer)
+
+
+if __name__ == "__main__":
+    main()

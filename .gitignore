@@ -31,4 +31,4 @@ data/interim/training_data.csv
 src/data/training_data.csv
 notebooks/text-detoxifier-t5-finetuned
 
-models/t5-best-model
+models/
