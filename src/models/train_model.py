@@ -130,7 +130,7 @@ class DetoxificationModel:
         batch_size = 128
         model_name = self.model_checkpoint.split("/")[-1]
         args = Seq2SeqTrainingArguments(
-            model_name,
+            "t5-small-detoxify-ft",
             evaluation_strategy="epoch",
             learning_rate=2e-5,
             per_device_train_batch_size=batch_size,
@@ -184,7 +184,7 @@ class DetoxificationModel:
         self.dataset = tokenized_datasets
 
 
-def main(path="../data/training_data.csv"):
+def main(path="src/data/training_data.csv"):
     # Loading the dataset
     data = pd.read_csv(path, index_col=False)
     model = DetoxificationModel('t5-small', "Make this text less toxic:")

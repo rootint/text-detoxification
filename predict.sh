@@ -1,4 +1,4 @@
-MODEL_DIR="models/t5-best-model"
+MODEL_DIR="models/"
 MODEL_ZIP="models/t5-best-model.zip"
 MODEL_URL="http://bibatalov.ru:1234/model.zip"
 
@@ -6,6 +6,7 @@ MODEL_URL="http://bibatalov.ru:1234/model.zip"
 if [ -d "$MODEL_DIR" ] && [ "$(ls -A $MODEL_DIR)" ]; then
     echo "Model directory already exists and is not empty, skipping download."
 else
+    mkdir models
     echo "Downloading model..."
     curl -o "$MODEL_ZIP" "$MODEL_URL"
     echo "Unzipping..."
