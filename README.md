@@ -1,4 +1,6 @@
-# Text De-toxification
+# Text Detoxification
+
+This is an implementation of text detoxification using a fine-tuned [T5 model from HuggingFace.](https://huggingface.co/t5-small)
 
 ## Training the model
 To train the model, simply run:
