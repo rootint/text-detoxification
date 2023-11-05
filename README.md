@@ -1,7 +1,7 @@
 # Text Detoxification
 
-This is an implementation of text detoxification using a fine-tuned [T5 model from HuggingFace.](https://huggingface.co/t5-small)
-
+This is an implementation of text detoxification using a fine-tuned [T5 model from HuggingFace.](https://huggingface.co/t5-small)<br>
+Notebooks in notebooks/testing don't have extensive comments as they were used as drafts to check hypotheses.
 ## Training the model
 To train the model, simply run:
 > `sh train.sh`<br>
