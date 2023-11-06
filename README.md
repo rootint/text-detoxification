@@ -6,7 +6,7 @@ Notebooks in notebooks/testing don't have extensive comments as they were used a
 To train the model, simply run:
 > `sh train.sh`<br>
 
-It will download the necessary data, preprocess it, and train the model.
+It will download the necessary data, preprocess it, and train the model on a CPU.
 ## Running the model
 To run the model, simply run:
 > `sh predict.sh <toxic text>`<br>
